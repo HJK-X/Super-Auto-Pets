@@ -114,7 +114,7 @@ class SAP(object):
                     self.draws += 1
                     self.score += 20
 
-                self.past_teams[self.turns].append(str(list(self.player.team)))
+                self.past_teams[self.turns].append(str(list(self.player.team))+"\n")
                 self.gen_teams.append(str(self.turns) + " " + str(enemy))
                 
                 self.actions_taken_this_turn = 0
@@ -257,17 +257,17 @@ class SAP(object):
             if npets == 3:
                 add = (0, 1)
             elif npets == 2:
-                add = (1, 2)
+                add = (0, 2)
             else:
-                add = (2, 3)
+                add = (0, 3)
         elif self.turns == 2:
             npets = randint(2, 5)
             if npets == 5:
-                add = (0, 2)
+                add = (0, 1)
             elif npets == 4:
-                add = (1, 3)
+                add = (0, 2)
             else:
-                add = (2, 3)
+                add = (0, 3)
         elif self.turns == 3:
             npets = randint(4, 5)
             if npets == 5:

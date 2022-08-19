@@ -1,10 +1,16 @@
 <Root>:
     FloatLayout:
         canvas.before:
+            Color:
+                rgba: 1, .349, 0, 1
             Rectangle:
                 pos: self.pos
                 size: self.size
-                source: 'resources/SAIPoutline.png' 
+        canvas.after:
+            Rectangle:
+                pos: 0, 400
+                size: 100, 100
+                source: 'resources/SAIPlogo.png'
 
         Button:
             text: "Start"
@@ -13,7 +19,7 @@
             size_hint: None, None
             on_press: root.start_ai()
 
-    AIVisualize:
+        AIVisualize:
 
 <AIVisualize>:
     FloatLayout:
