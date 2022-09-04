@@ -44,10 +44,11 @@ PX_FF = ((1860, 45), (950, 590), (1250, 650))
 
 PX_ERROR_MARGIN = 10
 
-PX_RESHAPE = (400, 400)
-
 SHOP_SIZE = 7
 TEAM_SIZE = 5
+
+NUM_INPUTS = 69
+NUM_ACTIONS = 69
 
 
 class GameState:
