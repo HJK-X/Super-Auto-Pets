@@ -17,6 +17,9 @@ from sklearn import random_projection
 
 
 class SAP(object):
+    observation_space = 65
+    action_space = 69
+    
     def __init__(self, data):
         self.player = Player(pack="ExpansionPack1")
         self.score = 0

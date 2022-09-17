@@ -16,7 +16,7 @@ def opponent_generator(num_turns):
         return []
 
 if __name__ == "__main__":
-    env = SuperAutoPetsEnv(opponent_generator, valid_actions_only= False )
+    env = sap.SAP()
     agent = DQNAgent(env.observation_space, env.action_space)
     # agent.load(START_NUM)
 
